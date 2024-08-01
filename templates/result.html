@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Queue Position</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Your Queue Information</h1>
+    <p>Your unique ID: {{ result.userId }}</p>
+    <p>Your queue position: {{ result.queuePosition }}</p>
+    <button onclick="checkAlternatives()">Check Other Hospitals</button>
+    <div id="alternatives"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

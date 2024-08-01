@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Queue System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Hospital Queue System</h1>
+    <h2>Select a Hospital:</h2>
+    <ul>
+    {% for hospital in hospitals %}
+        <li><a href="{{ url_for('form', hospital=hospital) }}">{{ hospital }}</a></li>
+    {% endfor %}
+    </ul>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
